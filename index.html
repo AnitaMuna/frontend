@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>MINMAX QUIZ</title>
+</head>
+
+<body>
+    <header>
+        <h1>MINMAX QUIZ</h1>
+        <h1>WELCOME TO MINMAX QUIZ GAME</h1>
+    <p>You will be given 5 questions to answer. Kindly follow the instructions below:</p>
+    
+   <div>
+   <ul>
+   <li>You are to read through the questions and answer carefully</li>
+   <li>You have only 1 minute to answer each question</li>
+   <li>You will be awarded 5points for each answer</li>
+   <li>You cannot go back to the previous question once you click the next button</li>
+   <li>See you at the top, Good Luck!</li>
+   </ul>
+   </div>
+    </header>
+    <div class=" start-div" id="startGame">
+        <button class="start-btn " id="startBtn">Start</button>
+    </div>
+    <main>
+        <div class="stats-bar hide" id="statsBar">
+                <li class="score">
+                        <span id="score"></span> / 25
+                </li>
+
+                <li class="quest"><span id="questCount"></span> &nbsp; of
+                    &nbsp; <span id="maxQuest"></span></li>
+            </ul>
+        </div>
+        <div class="wrapper hide">
+            <div class="question-container" id="questionContainer">
+                <div class="question" id="question">
+                    <h3 id="question" >ipsum, dolor sit amet consectetur adipisicing elit. Ut, ipsa.</h3>
+                </div>
+                <div class="button-grid" id="answerBtn">
+                  <button class="btn" id="0"></button>
+                  <button class="btn" id="1"></button>
+                  <button class="btn" id="2"></button>
+                </div>
+            </div>
+        </div>
+        <button id="nextBtn" class=" next-btn hide">Next</button>
+        <div class="try-again hide">
+            <h3 id="review"></h3>
+            <button id="replay">Play again</button>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
